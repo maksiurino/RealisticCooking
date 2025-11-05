@@ -47,7 +47,6 @@ public class ToasterBlock extends TransparentHorizontalFacingBlock implements Wa
     private static final VoxelShape OUTLINE_BASE = Block.createCuboidShape(2, 0, 4, 14, 8, 12);
     private static final Map<Direction, VoxelShape> OUTLINE_SHAPE = VoxelShapes.createFacingShapeMap(VoxelShapes.combineAndSimplify(OUTLINE_HANDLES, OUTLINE_BASE, BooleanBiFunction.OR));
     private static final Map<Direction, VoxelShape> OUTLINE_SHAPE_COOKING = VoxelShapes.createFacingShapeMap(VoxelShapes.combineAndSimplify(OUTLINE_HANDLES_COOKING, OUTLINE_BASE, BooleanBiFunction.OR));
-    private EmptyBlockView world;
 
     @Override
     public MapCodec<? extends ToasterBlock> getCodec() {
@@ -56,7 +55,6 @@ public class ToasterBlock extends TransparentHorizontalFacingBlock implements Wa
 
     @Override
     protected VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        this.world = (EmptyBlockView) world;
         if (state.get(COOKING)) {
             return OUTLINE_SHAPE_COOKING.get(state.get(FACING));
         }
@@ -65,13 +63,11 @@ public class ToasterBlock extends TransparentHorizontalFacingBlock implements Wa
 
     @Override
     protected VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        this.world = (EmptyBlockView) world;
         return COLLISION_SHAPE.get(state.get(FACING));
     }
 
     @Override
     protected VoxelShape getRaycastShape(BlockState state, BlockView world, BlockPos pos) {
-        this.world = (EmptyBlockView) world;
         return OUTLINE_SHAPE.get(state.get(FACING));
     }
 
