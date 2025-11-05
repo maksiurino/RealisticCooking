@@ -1,0 +1,17 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "bakingaway:item/baked_cookie",
+    "tints": [
+      {
+        "type": "minecraft:dye",
+        "value": 16683211,
+        "default": 16683211
+      },
+      {
+        "type": "minecraft:constant",
+        "value": -1
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "type=bottom,facing=north": {
+      "model": "minecraft:block/iron_vertical_slab"
+    },
+    "type=bottom,facing=south": {
+      "model": "minecraft:block/iron_vertical_slab",
+      "y": 180
+    },
+    "type=bottom,facing=east": {
+      "model": "minecraft:block/iron_vertical_slab",
+      "y": 90
+    },
+    "type=bottom,facing=west": {
+      "model": "minecraft:block/iron_vertical_slab",
+      "y": 270
+    },
+    "type=double": {
+      "model": "minecraft:block/iron_block"
+    }
+  }
+}

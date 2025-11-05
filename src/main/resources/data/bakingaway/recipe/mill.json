@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "#minecraft:planks",
+    "X": "minecraft:iron_ingot",
+    "C": "minecraft:cobblestone"
+  },
+  "pattern": [
+    "CXC",
+    "#X#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "bakingaway:mill"
+  }
+}

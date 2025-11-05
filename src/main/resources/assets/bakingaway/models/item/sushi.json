@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "bakingaway:item/sushi",
+    "layer1": "bakingaway:item/sushi_filling"
+  }
+}

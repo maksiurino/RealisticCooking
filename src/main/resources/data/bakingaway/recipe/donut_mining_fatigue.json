@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    [
+      "bakingaway:uniced_donut"
+    ],
+    [
+      "bakingaway:iced_spoon"
+    ],
+    "#bakingaway:donut_mining_fatigue"
+  ],
+  "result": {
+    "components": {
+      "minecraft:dyed_color": 2519907,
+      "minecraft:suspicious_stew_effects": [
+        {
+          "duration": 560,
+          "id": "minecraft:mining_fatigue"
+        }
+      ]
+    },
+    "id": "bakingaway:donut"
+  }
+}

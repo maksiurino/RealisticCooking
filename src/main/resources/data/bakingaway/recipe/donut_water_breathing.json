@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    [
+      "bakingaway:uniced_donut"
+    ],
+    [
+      "bakingaway:iced_spoon"
+    ],
+    "#bakingaway:donut_water_breathing"
+  ],
+  "result": {
+    "components": {
+      "minecraft:dyed_color": 9089535,
+      "minecraft:suspicious_stew_effects": [
+        {
+          "duration": 560,
+          "id": "minecraft:water_breathing"
+        }
+      ]
+    },
+    "id": "bakingaway:donut"
+  }
+}

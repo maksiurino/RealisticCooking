@@ -1,0 +1,8 @@
+{
+  "block.cook_real.toaster": "Toaster",
+  "itemGroup.cook_real": "Realistic Cooking",
+
+  "item.cook_real.raw_toast": "Uncooked Toast",
+  "item.cook_real.cooked_toast": "Cooked Toast",
+  "item.cook_real.burnt_toast": "Burnt Toast"
+}

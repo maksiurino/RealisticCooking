@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    [
+      "minecraft:bowl"
+    ],
+    [
+      "minecraft:sugar"
+    ],
+    [
+      "bakingaway:flour"
+    ],
+    [
+      "minecraft:water_bucket"
+    ]
+  ],
+  "result": {
+    "id": "bakingaway:sweet_dough"
+  }
+}

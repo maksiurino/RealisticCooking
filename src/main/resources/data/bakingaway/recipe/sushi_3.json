@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    [
+      "minecraft:dried_kelp"
+    ],
+    [
+      "minecraft:tropical_fish"
+    ]
+  ],
+  "result": {
+    "components": {
+      "minecraft:dyed_color": 16741893
+    },
+    "id": "bakingaway:sushi"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "item.bakingaway.flour": "Mąka",
+
+  "item.bakingaway.pie": "Ciasto",
+  "item.bakingaway.sushi": "Sushi",
+  "item.bakingaway.baked_cookie": "Pieczone Ciastko",
+
+  "item.bakingaway.spoon": "Łyżka",
+  "item.bakingaway.iced_spoon": "Łyżka z Lukrem",
+  "item.bakingaway.donut": "Pączek",
+  "item.bakingaway.uniced_donut": "Pączek bez Lukru",
+  "item.bakingaway.burnt_donut": "Spalony Pączek",
+  "item.bakingaway.uncooked_donut": "Nieupieczony Pączek",
+  "item.bakingaway.sweet_dough": "Słodkie Ciasto",
+  "block.bakingaway.sweet_dough": "Słodkie Ciasto",
+  "item.bakingaway.risen_sweet_dough": "Wyrośnięte Słodkie Ciasto",
+  "block.bakingaway.mill": "Młynek",
+  "item.bakingaway.mill": "Młynek",
+
+  "sound.bakingaway.lick": "Liżenie"
+}

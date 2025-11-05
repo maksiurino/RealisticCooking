@@ -1,0 +1,17 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "bakingaway:item/sushi",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -1
+      },
+      {
+        "type": "minecraft:dye",
+        "value": 16683211,
+        "default": 16683211
+      }
+    ]
+  }
+}

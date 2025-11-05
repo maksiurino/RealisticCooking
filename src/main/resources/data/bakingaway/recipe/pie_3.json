@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    [
+      "minecraft:wheat"
+    ],
+    [
+      "minecraft:egg"
+    ],
+    [
+      "minecraft:slime_ball"
+    ]
+  ],
+  "result": {
+    "components": {
+      "minecraft:dyed_color": 7000917
+    },
+    "id": "bakingaway:pie"
+  }
+}

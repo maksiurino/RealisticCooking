@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    [
+      "bakingaway:uniced_donut"
+    ],
+    [
+      "bakingaway:iced_spoon"
+    ],
+    "#bakingaway:donut_blindness"
+  ],
+  "result": {
+    "components": {
+      "minecraft:dyed_color": 1120039,
+      "minecraft:suspicious_stew_effects": [
+        {
+          "duration": 560,
+          "id": "minecraft:blindness"
+        }
+      ]
+    },
+    "id": "bakingaway:donut"
+  }
+}

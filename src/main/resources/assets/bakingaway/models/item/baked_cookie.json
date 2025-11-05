@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "bakingaway:item/cookie_base",
+    "layer1": "bakingaway:item/cookie_top"
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "cook_real:block/toaster"
+      },
+      "when": {
+        "OR": [
+          {
+            "facing": "north",
+            "cooking": false
+          },
+          {
+            "facing": "south",
+            "cooking": false
+          }
+        ]
+      }
+    },
+    {
+      "apply": {
+        "model": "cook_real:block/toaster",
+        "y": 90
+      },
+      "when": {
+        "OR": [
+          {
+            "facing": "east",
+            "cooking": false
+          },
+          {
+            "facing": "west",
+            "cooking": false
+          }
+        ]
+      }
+    },
+
+    {
+      "apply": {
+        "model": "cook_real:block/toaster_cooking"
+      },
+      "when": {
+        "OR": [
+          {
+            "facing": "north",
+            "cooking": true
+          },
+          {
+            "facing": "south",
+            "cooking": true
+          }
+        ]
+      }
+    },
+    {
+      "apply": {
+        "model": "cook_real:block/toaster_cooking",
+        "y": 90
+      },
+      "when": {
+        "OR": [
+          {
+            "facing": "east",
+            "cooking": true
+          },
+          {
+            "facing": "west",
+            "cooking": true
+          }
+        ]
+      }
+    },
+
+    {
+      "apply": {
+        "model": "cook_real:block/toaster_raw_toast"
+      },
+      "when": {
+        "OR": [
+          {
+            "facing": "north",
+            "toast": "raw"
+          },
+          {
+            "facing": "south",
+            "toast": "raw"
+          }
+        ]
+      }
+    },
+    {
+      "apply": {
+        "model": "cook_real:block/toaster_raw_toast",
+        "y": 90
+      },
+      "when": {
+        "OR": [
+          {
+            "facing": "east",
+            "toast": "raw"
+          },
+          {
+            "facing": "west",
+            "toast": "raw"
+          }
+        ]
+      }
+    },
+
+    {
+      "apply": {
+        "model": "cook_real:block/toaster_cooked_toast"
+      },
+      "when": {
+        "OR": [
+          {
+            "facing": "north",
+            "toast": "cooked"
+          },
+          {
+            "facing": "south",
+            "toast": "cooked"
+          }
+        ]
+      }
+    },
+    {
+      "apply": {
+        "model": "cook_real:block/toaster_cooked_toast",
+        "y": 90
+      },
+      "when": {
+        "OR": [
+          {
+            "facing": "east",
+            "toast": "cooked"
+          },
+          {
+            "facing": "west",
+            "toast": "cooked"
+          }
+        ]
+      }
+    },
+
+    {
+      "apply": {
+        "model": "cook_real:block/toaster_burnt_toast"
+      },
+      "when": {
+        "OR": [
+          {
+            "facing": "north",
+            "toast": "burnt"
+          },
+          {
+            "facing": "south",
+            "toast": "burnt"
+          }
+        ]
+      }
+    },
+    {
+      "apply": {
+        "model": "cook_real:block/toaster_burnt_toast",
+        "y": 90
+      },
+      "when": {
+        "OR": [
+          {
+            "facing": "east",
+            "toast": "burnt"
+          },
+          {
+            "facing": "west",
+            "toast": "burnt"
+          }
+        ]
+      }
+    }
+  ]
+}

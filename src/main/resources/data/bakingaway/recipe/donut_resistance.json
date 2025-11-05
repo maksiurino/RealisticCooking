@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    [
+      "bakingaway:uniced_donut"
+    ],
+    [
+      "bakingaway:iced_spoon"
+    ],
+    "#bakingaway:donut_resistance"
+  ],
+  "result": {
+    "components": {
+      "minecraft:dyed_color": 6717839,
+      "minecraft:suspicious_stew_effects": [
+        {
+          "duration": 560,
+          "id": "minecraft:resistance"
+        }
+      ]
+    },
+    "id": "bakingaway:donut"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "bakingaway:block/mill",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "bakingaway:block/mill"
+    },
+    "facing=south": {
+      "model": "bakingaway:block/mill",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "bakingaway:block/mill",
+      "y": 270
+    }
+  }
+}

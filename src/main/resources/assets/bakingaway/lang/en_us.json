@@ -1,0 +1,23 @@
+{
+  "itemgroup.baking": "BakingAway",
+
+  "item.bakingaway.flour": "Flour",
+
+  "item.bakingaway.pie": "Pie",
+  "item.bakingaway.sushi": "Sushi",
+  "item.bakingaway.baked_cookie": "Baked Cookie",
+
+  "item.bakingaway.spoon": "Spoon",
+  "item.bakingaway.iced_spoon": "Iced Spoon",
+  "item.bakingaway.donut": "Donut",
+  "item.bakingaway.uniced_donut": "Un-Iced Donut",
+  "item.bakingaway.burnt_donut": "Burnt Donut",
+  "item.bakingaway.uncooked_donut": "Un-Cooked Donut",
+  "item.bakingaway.sweet_dough": "Sweet Dough",
+  "block.bakingaway.sweet_dough": "Sweet Dough",
+  "item.bakingaway.risen_sweet_dough": "Risen Sweet Dough",
+  "block.bakingaway.mill": "Mill",
+  "item.bakingaway.mill": "Mill",
+
+  "sound.bakingaway.lick": "Licking"
+}

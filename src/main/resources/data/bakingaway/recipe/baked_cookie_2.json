@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    [
+      "minecraft:wheat"
+    ],
+    [
+      "minecraft:sugar"
+    ],
+    [
+      "minecraft:cocoa_beans"
+    ],
+    [
+      "minecraft:carrot"
+    ]
+  ],
+  "result": {
+    "components": {
+      "minecraft:dyed_color": 16755548
+    },
+    "id": "bakingaway:baked_cookie"
+  }
+}

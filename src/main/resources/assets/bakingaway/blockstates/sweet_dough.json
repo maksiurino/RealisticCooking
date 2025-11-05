@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "stage=0": {
+      "model": "bakingaway:block/sweet_dough_stage0"
+    },
+    "stage=1": {
+      "model": "bakingaway:block/sweet_dough_stage1"
+    },
+    "stage=2": {
+      "model": "bakingaway:block/sweet_dough_stage2"
+    },
+    "stage=3": {
+      "model": "bakingaway:block/sweet_dough_stage3"
+    }
+  }
+}

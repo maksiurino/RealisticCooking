@@ -1,0 +1,6 @@
+{
+  "parent": "cook_real:block/toaster_toast",
+  "textures": {
+    "toast": "cook_real:item/raw_toast"
+  }
+}

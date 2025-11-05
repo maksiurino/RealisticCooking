@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "bakingaway:item/donut",
+    "layer1": "bakingaway:item/donut_icing",
+    "layer2": "bakingaway:item/donut_icing_glint"
+  }
+}

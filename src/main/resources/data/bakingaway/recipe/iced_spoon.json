@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    [
+      "minecraft:egg"
+    ],
+    [
+      "minecraft:sugar"
+    ],
+    [
+      "bakingaway:spoon"
+    ]
+  ],
+  "result": {
+    "id": "bakingaway:iced_spoon"
+  }
+}

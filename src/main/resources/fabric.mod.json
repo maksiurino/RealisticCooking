@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "cook_real",
+	"version": "${version}",
+	"name": "Realistic Cooking",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/cook_real/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"pl.maksiuhrino.realcook.RealisticCooking"
+		],
+		"fabric-datagen": [
+			"pl.maksiuhrino.realcook.RealisticCookingDataGenerator"
+		],
+		"client": [
+			"pl.maksiuhrino.realcook.RealisticCookingClient"
+		]
+	},
+	"mixins": [
+		"cook_real.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
