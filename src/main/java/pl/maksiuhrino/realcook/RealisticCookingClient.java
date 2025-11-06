@@ -9,5 +9,6 @@ public class RealisticCookingClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         BlockRenderLayerMap.putBlock(ModBlocks.TOASTER, BlockRenderLayer.TRANSLUCENT);
+        BlockRenderLayerMap.putBlock(ModBlocks.OVEN, BlockRenderLayer.TRANSLUCENT);
     }
 }
