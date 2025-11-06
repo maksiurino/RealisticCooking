@@ -8,6 +8,8 @@ import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.ItemScatterer;
@@ -57,6 +59,24 @@ public class OvenBlock extends HorizontalFacingBlockWithEntity implements BlockE
 
     @Override
     protected ActionResult onUseWithItem(ItemStack stack, BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        return super.onUseWithItem(stack, state, world, pos, player, hand, hit);
+        if (world.getBlockEntity(pos) instanceof OvenBlockEntity ovenBlockEntity) {
+            if (ovenBlockEntity.isEmpty() && !stack.isEmpty()) {
+                ovenBlockEntity.setStack(0, stack.copyWithCount(1));
+                world.playSound(player, pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 1f, 2f);
+                stack.decrement(1);
+
+                ovenBlockEntity.markDirty();
+                world.updateListeners(pos, state, state, 0);
+            } else if (stack.isEmpty() && !player.isSneaking()) {
+                ItemStack stackInOven = ovenBlockEntity.getStack(0);
+                player.setStackInHand(Hand.MAIN_HAND, stackInOven);
+                world.playSound(player, pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 1f, 1f);
+                ovenBlockEntity.clear();
+
+                ovenBlockEntity.markDirty();
+                world.updateListeners(pos, state, state, 0);
+            }
+        }
+        return ActionResult.SUCCESS;
     }
 }
