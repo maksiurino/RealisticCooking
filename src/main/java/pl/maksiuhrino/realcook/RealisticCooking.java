@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import pl.maksiuhrino.realcook.block.ModBlocks;
+import pl.maksiuhrino.realcook.block.entity.ModBlockEntities;
 import pl.maksiuhrino.realcook.item.ModItemGroups;
 import pl.maksiuhrino.realcook.item.ModItems;
 import pl.maksiuhrino.realcook.util.ModSounds;
@@ -21,6 +22,7 @@ public class RealisticCooking implements ModInitializer {
 		ModBlocks.initialize();
 		ModItems.initialize();
 		ModItemGroups.initialize();
+		ModBlockEntities.initialize();
 		LOGGER.info("Hello Fabric world!");
 	}
 }

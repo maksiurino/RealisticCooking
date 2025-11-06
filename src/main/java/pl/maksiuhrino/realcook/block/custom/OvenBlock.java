@@ -17,6 +17,7 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import pl.maksiuhrino.realcook.block.custom.vanilla.HorizontalFacingBlockWithEntity;
+import pl.maksiuhrino.realcook.block.entity.custom.OvenBlockEntity;
 
 public class OvenBlock extends HorizontalFacingBlockWithEntity implements BlockEntityProvider {
     public static final MapCodec<OvenBlock> CODEC = createCodec(OvenBlock::new);
