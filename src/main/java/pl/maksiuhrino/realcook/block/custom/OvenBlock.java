@@ -35,7 +35,7 @@ public class OvenBlock extends HorizontalFacingBlockWithEntity implements BlockE
     @Nullable
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return null;
+        return new OvenBlockEntity(pos, state);
     }
 
     @Override
