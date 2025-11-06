@@ -62,11 +62,14 @@ public class ModItemGroups {
             entries.add(ModItems.RAW_TOAST);
             entries.add(ModItems.COOKED_TOAST);
             entries.add(ModItems.BURNT_TOAST);
+
+            entries.add(ModItems.OVEN);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.addAfter(Items.SMOOTH_STONE, ModItems.SMOOTH_STONE_STAIRS);
             entries.addAfter(Items.IRON_BLOCK, ModItems.IRON_SLAB);
+            entries.addAfter(ModItems.IRON_SLAB, ModItems.IRON_VERTICAL_SLAB);
         });
     }
 }

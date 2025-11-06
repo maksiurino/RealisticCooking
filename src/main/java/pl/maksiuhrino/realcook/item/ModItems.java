@@ -24,6 +24,8 @@ public class ModItems {
 
     public static final Item TOASTER = registerBlockItem("toaster", ModBlocks.TOASTER);
 
+    public static final Item OVEN = registerBlockItem("oven", ModBlocks.OVEN);
+
 
     public static final Item SMOOTH_STONE_STAIRS = Items.register(ModBlocks.SMOOTH_STONE_STAIRS);
     public static final Item IRON_SLAB = registerBlockItem("iron_slab", ModBlocks.IRON_SLAB);

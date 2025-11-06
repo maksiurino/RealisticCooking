@@ -42,6 +42,7 @@ public class SweetDoughBlock extends Block {
                 || blockStateFuel.isOf(Blocks.BLAST_FURNACE)
                 || blockStateFuel.isOf(Blocks.FURNACE)
                 || blockStateFuel.isOf(Blocks.SOUL_FIRE)
+                || blockStateFuel.isOf(ModBlocks.OVEN)
         ) {
             if(state.get(DOUGH_STAGE) <= 2) {
                 BlockState blockStateRise = state.with(DOUGH_STAGE, state.get(DOUGH_STAGE) + 1);

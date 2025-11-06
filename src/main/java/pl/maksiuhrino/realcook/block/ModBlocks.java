@@ -11,10 +11,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.util.Identifier;
 import pl.maksiuhrino.realcook.RealisticCooking;
-import pl.maksiuhrino.realcook.block.custom.MillBlock;
-import pl.maksiuhrino.realcook.block.custom.SweetDoughBlock;
-import pl.maksiuhrino.realcook.block.custom.ToasterBlock;
-import pl.maksiuhrino.realcook.block.custom.VerticalSlabBlock;
+import pl.maksiuhrino.realcook.block.custom.*;
 
 import java.util.function.Function;
 
@@ -26,6 +23,16 @@ public class ModBlocks {
             true,
             null
     );
+
+    public static final Block OVEN = register(
+            "oven",
+            OvenBlock::new,
+            AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).nonOpaque(),
+            true,
+            null
+    );
+
+
 
     public static final Block SMOOTH_STONE_STAIRS = registerStairsBlock(
             "smooth_stone_stairs",
@@ -62,7 +69,7 @@ public class ModBlocks {
             SweetDoughBlock::new, AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).nonOpaque().ticksRandomly().strength(1.0F, 2.0F));
 
 
-    private static Block registerStairsBlock(String id, Block base) {
+    public static Block registerStairsBlock(String id, Block base) {
         return registerr(id, settings -> new StairsBlock(base.getDefaultState(), settings), AbstractBlock.Settings.copy(base));
     }
 
