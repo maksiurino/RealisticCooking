@@ -39,7 +39,7 @@ public class OvenBlock extends TransparentHorizontalFacingBlock {
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
         return this.getDefaultState()
-                .with(FACING, ctx.getHorizontalPlayerFacing().getOpposite())
+                .with(FACING, ctx.getHorizontalPlayerFacing())
                 .with(OPEN, false);
     }
 
