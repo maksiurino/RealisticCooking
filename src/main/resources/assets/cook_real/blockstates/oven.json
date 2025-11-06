@@ -2,7 +2,7 @@
   "multipart": [
     {
       "apply": {
-        "model": "cook_ral:block/oven"
+        "model": "cook_real:block/oven"
       },
       "when": {
         "facing": "south",
@@ -11,7 +11,7 @@
     },
     {
       "apply": {
-        "model": "cook_ral:block/oven",
+        "model": "cook_real:block/oven",
         "y": 180
       },
       "when": {
@@ -21,7 +21,7 @@
     },
     {
       "apply": {
-        "model": "cook_ral:block/oven",
+        "model": "cook_real:block/oven",
         "y": 90
       },
       "when": {
@@ -31,7 +31,7 @@
     },
     {
       "apply": {
-        "model": "cook_ral:block/oven",
+        "model": "cook_real:block/oven",
         "y": 270
       },
       "when": {
@@ -42,7 +42,7 @@
 
     {
       "apply": {
-        "model": "cook_ral:block/oven_open"
+        "model": "cook_real:block/oven_open"
       },
       "when": {
         "facing": "south",
@@ -51,7 +51,7 @@
     },
     {
       "apply": {
-        "model": "cook_ral:block/oven_open",
+        "model": "cook_real:block/oven_open",
         "y": 180
       },
       "when": {
@@ -61,7 +61,7 @@
     },
     {
       "apply": {
-        "model": "cook_ral:block/oven_open",
+        "model": "cook_real:block/oven_open",
         "y": 90
       },
       "when": {
@@ -71,7 +71,7 @@
     },
     {
       "apply": {
-        "model": "cook_ral:block/oven_open",
+        "model": "cook_real:block/oven_open",
         "y": 270
       },
       "when": {

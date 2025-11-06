@@ -4,5 +4,7 @@
 
   "item.cook_real.raw_toast": "Uncooked Toast",
   "item.cook_real.cooked_toast": "Cooked Toast",
-  "item.cook_real.burnt_toast": "Burnt Toast"
+  "item.cook_real.burnt_toast": "Burnt Toast",
+
+  "block.cook_real.oven": "Oven"
 }

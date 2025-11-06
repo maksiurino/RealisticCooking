@@ -4,5 +4,7 @@
 
   "item.cook_real.raw_toast": "Nieupieczony Tost",
   "item.cook_real.cooked_toast": "Upieczony Tost",
-  "item.cook_real.burnt_toast": "Spalony Tost"
+  "item.cook_real.burnt_toast": "Spalony Tost",
+
+  "block.cook_real.oven": "Piekarnik"
 }
