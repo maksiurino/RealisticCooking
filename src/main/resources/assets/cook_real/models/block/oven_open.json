@@ -6,7 +6,7 @@
 	"textures": {
 		"0": "cook_real:block/oven",
 		"1": "cook_real:block/inner_oven",
-		"particle": "cook_real:block/oven"
+		"particle": "minecraft:block/iron_block"
 	},
 	"elements": [
 		{
