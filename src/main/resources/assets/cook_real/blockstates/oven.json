@@ -1,0 +1,83 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "cook_ral:block/oven"
+      },
+      "when": {
+        "facing": "south",
+        "open": false
+      }
+    },
+    {
+      "apply": {
+        "model": "cook_ral:block/oven",
+        "y": 180
+      },
+      "when": {
+        "facing": "north",
+        "open": false
+      }
+    },
+    {
+      "apply": {
+        "model": "cook_ral:block/oven",
+        "y": 90
+      },
+      "when": {
+        "facing": "west",
+        "open": false
+      }
+    },
+    {
+      "apply": {
+        "model": "cook_ral:block/oven",
+        "y": 270
+      },
+      "when": {
+        "facing": "east",
+        "open": false
+      }
+    },
+
+    {
+      "apply": {
+        "model": "cook_ral:block/oven_open"
+      },
+      "when": {
+        "facing": "south",
+        "open": true
+      }
+    },
+    {
+      "apply": {
+        "model": "cook_ral:block/oven_open",
+        "y": 180
+      },
+      "when": {
+        "facing": "north",
+        "open": true
+      }
+    },
+    {
+      "apply": {
+        "model": "cook_ral:block/oven_open",
+        "y": 90
+      },
+      "when": {
+        "facing": "west",
+        "open": true
+      }
+    },
+    {
+      "apply": {
+        "model": "cook_ral:block/oven_open",
+        "y": 270
+      },
+      "when": {
+        "facing": "east",
+        "open": true
+      }
+    }
+  ]
+}
