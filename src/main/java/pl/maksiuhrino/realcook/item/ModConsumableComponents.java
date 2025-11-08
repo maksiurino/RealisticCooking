@@ -8,6 +8,7 @@ import net.minecraft.item.consume.ApplyEffectsConsumeEffect;
 import net.minecraft.item.consume.UseAction;
 import pl.maksiuhrino.realcook.util.ModSounds;
 
+import static net.minecraft.component.type.ConsumableComponents.drink;
 import static net.minecraft.component.type.ConsumableComponents.food;
 
 public class ModConsumableComponents {
@@ -18,6 +19,11 @@ public class ModConsumableComponents {
             .build();
 
     public static final ConsumableComponent BUTTER = food().sound(ModSounds.ENTITY_GENERIC_LICK).build();
+
+    public static final ConsumableComponent RAPE_OIL = drink()
+            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(
+                    StatusEffects.NAUSEA, 180, 1), 1.0F))
+            .build();
 
     public static final ConsumableComponent LICK = spoon().build();
 

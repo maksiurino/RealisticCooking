@@ -28,6 +28,9 @@ public class ModItems {
 
     public static final Item BUTTER = register("butter", Item::new, new Item.Settings().food(ModFoodComponents.BUTTER).component(DataComponentTypes.CONSUMABLE, ModConsumableComponents.BUTTER), null);
 
+    public static final Item RAPE_OIL = register("rape_oil", Item::new, new Item.Settings().component(DataComponentTypes.CONSUMABLE, ModConsumableComponents.RAPE_OIL), null);
+
+
 
     public static final Item SMOOTH_STONE_STAIRS = Items.register(ModBlocks.SMOOTH_STONE_STAIRS);
     public static final Item IRON_SLAB = registerBlockItem("iron_slab", ModBlocks.IRON_SLAB);
