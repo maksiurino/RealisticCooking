@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:iron_ingot",
+  "result": {
+    "count": 1,
+    "id": "cook_real:industrial_iron_block"
+  }
+}

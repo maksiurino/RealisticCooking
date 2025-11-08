@@ -16,9 +16,6 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        BlockStateModelGenerator.BlockTexturePool smoothStonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.SMOOTH_STONE);
-
-        smoothStonePool.stairs(ModBlocks.SMOOTH_STONE_STAIRS);
     }
 
     @Override
