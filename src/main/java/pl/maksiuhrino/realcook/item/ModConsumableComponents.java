@@ -17,9 +17,11 @@ public class ModConsumableComponents {
                     StatusEffects.NAUSEA, 180, 1), 1.0F))
             .build();
 
+    public static final ConsumableComponent BUTTER = food().sound(ModSounds.ENTITY_GENERIC_LICK).build();
+
     public static final ConsumableComponent LICK = spoon().build();
 
     public static ConsumableComponent.Builder spoon() {
-        return ConsumableComponent.builder().useAction(UseAction.DRINK).consumeSeconds(3.2F).sound(ModSounds.ENTITY_GENERIC_LICK).consumeParticles(true).finishSound(ModSounds.ENTITY_GENERIC_LICK);
+        return ConsumableComponent.builder().useAction(UseAction.DRINK).consumeSeconds(3.2F).sound(ModSounds.ENTITY_GENERIC_LICK).consumeParticles(true);
     }
 }

@@ -64,6 +64,8 @@ public class ModItemGroups {
             entries.add(ModItems.BURNT_TOAST);
 
             entries.add(ModItems.OVEN);
+
+            entries.add(ModItems.BUTTER);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
