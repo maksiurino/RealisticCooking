@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "cook_real:block/industrial_iron_block_top",
+    "side": "cook_real:block/industrial_iron_block"
+  }
+}
