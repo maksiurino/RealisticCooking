@@ -5,6 +5,7 @@ import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.util.ActionResult;
@@ -19,6 +20,7 @@ import pl.maksiuhrino.realcook.block.custom.vanilla.TransparentHorizontalFacingB
 public class OvenBlock extends TransparentHorizontalFacingBlock {
     public static final MapCodec<OvenBlock> CODEC = createCodec(OvenBlock::new);
     public static final BooleanProperty OPEN = BooleanProperty.of("open");
+    private ItemStack inventory = ItemStack.EMPTY;
 
     @Override
     protected MapCodec<? extends OvenBlock> getCodec() {
@@ -54,6 +56,17 @@ public class OvenBlock extends TransparentHorizontalFacingBlock {
                 world.setBlockState(pos, state.with(OPEN, false));
             } else {
                 world.setBlockState(pos, state.with(OPEN, true));
+            }
+            return ActionResult.SUCCESS;
+        } else if (!isPlayerCrouching(player)) {
+            if (stack.isEmpty() && !(this.inventory == ItemStack.EMPTY)) {
+                dropStack(world, pos.offset(state.get(FACING)), inventory);
+                this.inventory = ItemStack.EMPTY;
+            } else if (this.inventory == ItemStack.EMPTY) {
+                this.inventory = stack;
+                stack.decrementUnlessCreative(1, player);
+            } else {
+                return ActionResult.FAIL;
             }
             return ActionResult.SUCCESS;
         }
