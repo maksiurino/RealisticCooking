@@ -8,6 +8,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.util.Identifier;
 import pl.maksiuhrino.realcook.RealisticCooking;
@@ -16,20 +17,22 @@ import pl.maksiuhrino.realcook.block.custom.*;
 import java.util.function.Function;
 
 public class ModBlocks {
-    public static final Block TOASTER = register(
+    public static final Block TOASTER = registerCustomBlock(
             "toaster",
             ToasterBlock::new,
-            AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).nonOpaque().luminance(ignored -> 0),
-            true,
-            null
+            AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).nonOpaque().luminance(ignored -> 0)
     );
 
-    public static final Block OVEN = register(
+    public static final Block OVEN = registerCustomBlock(
             "oven",
             OvenBlock::new,
-            AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).nonOpaque(),
-            true,
-            null
+            AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).nonOpaque()
+    );
+
+    public static final Block INDUSTRIAL_IRON_BLOCK = registerCustomBlock(
+            "industrial_iron_block",
+            Block::new,
+            AbstractBlock.Settings.create().mapColor(MapColor.GRAY).sounds(BlockSoundGroup.NETHERITE).requiresTool()
     );
 
 
@@ -115,6 +118,10 @@ public class ModBlocks {
 
     private static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> blockFactory, AbstractBlock.Settings settings) {
         return register(name, blockFactory, settings, true, "bakingaway");
+    }
+
+    private static Block registerCustomBlock(String name, Function<AbstractBlock.Settings, Block> blockFactory, AbstractBlock.Settings settings) {
+        return register(name, blockFactory, settings, true, null);
     }
 
     public static void initialize() {}
