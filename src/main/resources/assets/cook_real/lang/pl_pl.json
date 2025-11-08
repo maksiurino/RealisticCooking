@@ -6,5 +6,10 @@
   "item.cook_real.cooked_toast": "Upieczony Tost",
   "item.cook_real.burnt_toast": "Spalony Tost",
 
-  "block.cook_real.oven": "Piekarnik"
+  "block.cook_real.oven": "Piekarnik",
+
+  "item.cook_real.butter": "Masło",
+  "item.cook_real.rape_oil": "Olej Rzepakowy",
+
+  "block.cook_real.industrial_iron_block": "Blok przemysłowego żelaza"
 }

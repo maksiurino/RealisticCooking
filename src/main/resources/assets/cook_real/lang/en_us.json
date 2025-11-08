@@ -6,5 +6,10 @@
   "item.cook_real.cooked_toast": "Cooked Toast",
   "item.cook_real.burnt_toast": "Burnt Toast",
 
-  "block.cook_real.oven": "Oven"
+  "block.cook_real.oven": "Oven",
+
+  "item.cook_real.rape_oil": "Rape Oil",
+  "item.cook_real.butter": "Butter",
+
+  "block.cook_real.industrial_iron_block": "Block of Industrial Iron"
 }
